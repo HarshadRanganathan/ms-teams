@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/HarshadRanganathan/pyteams.svg?branch=master)](https://travis-ci.com/HarshadRanganathan/pyteams)
+
 # pyteams
 
 Helper library to construct microsoft teams connector card messages.
@@ -23,9 +25,9 @@ from pyteams.messagecard.card import MessageCard
 # Create Activity Section
 activity_section = Section()\
 	.activity_group(activity_image='https://www.shareicon.net/data/32x32/2016/07/16/634601_python_512x512.png',
-                    activity_title='Description',
-                    activity_text='Helper library to construct microsoft teams connector card messages')\
-    .build()
+	                activity_title='Description',
+	                activity_text='Helper library to construct microsoft teams connector card messages')\
+	.build()
 
 # Add activitity section to the message card
 message_card = MessageCard().title('pyteams')\
@@ -88,13 +90,13 @@ adaptive_card = AdaptiveCard().container(header)
 pkg_info = Container()
 
 basic = FactSet(separator=True)\
-	.fact(Fact('URL', 'https://github.com/HarshadRanganathan/pyteams').build()) \
+    .fact(Fact('URL', 'https://github.com/HarshadRanganathan/pyteams').build()) \
     .fact(Fact('AUTHOR', 'Harshad Ranganathan').build()) \
     .fact(Fact('LICENSE', 'MIT').build()) \
     .build()
     
 keywords = FactSet(separator=True) \
-	.fact(Fact('KEYWORDS', 'Microsoft Teams').build()) \
+    .fact(Fact('KEYWORDS', 'Microsoft Teams').build()) \
     .build()
     
 classifiers = FactSet(separator=True) \
