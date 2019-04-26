@@ -1,0 +1,26 @@
+{
+    "@context": "https://schema.org/extensions",
+    "@type": "MessageCard",
+    "sections": [
+        {
+            "activityImage": "https://www.shareicon.net/data/32x32/2016/07/16/634601_python_512x512.png",
+            "activityText": "Helper library to construct microsoft teams connector card messages",
+            "activityTitle": "Description"
+        },
+        {
+            "facts": [
+                {
+                    "name": "URL",
+                    "value": "https://github.com/HarshadRanganathan/pyteams"
+                },
+                {
+                    "name": "AUTHOR",
+                    "value": "Harshad Ranganathan"
+                }
+            ]
+        }
+    ],
+    "summary": "Helper library to construct microsoft teams connector card messages",
+    "themeColor": "FF0000",
+    "title": "pyteams"
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "items": [
+        {
+          "separator": true,
+          "size": "Medium",
+          "text": "pyteams",
+          "type": "TextBlock",
+          "weight": "Bolder"
+        },
+        {
+          "columns": [
+            {
+              "items": [
+                {
+                  "size": "small",
+                  "style": "Person",
+                  "type": "Image",
+                  "url": "https://www.shareicon.net/data/32x32/2016/07/16/634601_python_512x512.png"
+                }
+              ],
+              "type": "Column",
+              "width": "auto"
+            },
+            {
+              "items": [
+                {
+                  "text": "Description",
+                  "type": "TextBlock",
+                  "weight": "Bolder",
+                  "wrap": true
+                },
+                {
+                  "spacing": "None",
+                  "text": "Helper library to construct microsoft teams connector card messages",
+                  "type": "TextBlock",
+                  "wrap": true
+                }
+              ],
+              "type": "Column",
+              "width": "stretch"
+            }
+          ],
+          "type": "ColumnSet"
+        }
+      ],
+      "type": "Container"
+    },
+    {
+      "items": [
+        {
+          "facts": [
+            {
+              "title": "URL",
+              "type": "Fact",
+              "value": "https://github.com/HarshadRanganathan/pyteams"
+            },
+            {
+              "title": "AUTHOR",
+              "type": "Fact",
+              "value": "Harshad Ranganathan"
+            },
+            {
+              "title": "LICENSE",
+              "type": "Fact",
+              "value": "MIT"
+            }
+          ],
+          "separator": true,
+          "type": "FactSet"
+        },
+        {
+          "facts": [
+            {
+              "title": "KEYWORDS",
+              "type": "Fact",
+              "value": "Microsoft Teams"
+            }
+          ],
+          "separator": true,
+          "type": "FactSet"
+        },
+        {
+          "facts": [
+            {
+              "title": "CLASSIFIERS",
+              "type": "Fact",
+              "value": "Programming Language :: Python :: 3.7\n\nLicense :: OSI Approved :: MIT License\n\nOperating System :: OS Independent"
+            }
+          ],
+          "separator": true,
+          "type": "FactSet"
+        }
+      ],
+      "type": "Container"
+    }
+  ],
+  "type": "AdaptiveCard",
+  "version": "1.0"
+}
