@@ -14,7 +14,7 @@ This library supports building:
 
 Let's build below message card using ms-teams library.
 
-![Message Card](images/Message_Card.png?raw=true)
+![Message Card](https://github.com/HarshadRanganathan/ms-teams/blob/master/images/Message_Card.png?raw=true)
 
 ```python
 # imports
@@ -54,7 +54,7 @@ Refer [Adaptive Card Schema](https://docs.microsoft.com/en-us/adaptive-cards/aut
 
 Let's build below adaptive card using ms-teams library.
 
-![Adaptive Card](images/Adaptive_Card.png?raw=true)
+![Adaptive Card](https://github.com/HarshadRanganathan/ms-teams/blob/master/images/Adaptive_Card.png?raw=true)
 
 ```python
 # imports
