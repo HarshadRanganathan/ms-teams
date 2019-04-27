@@ -16,7 +16,7 @@ class TextBlock(Element):
 
     def spacing(self, spacing):
         """
-        :param spacing:
+        :param spacing: Controls the amount of spacing between this element and the preceding element.
         :type spacing: str
         :return:
         """
@@ -25,7 +25,7 @@ class TextBlock(Element):
 
     def size(self, size):
         """
-        :param size:
+        :param size: Controls size of text.
         :type size: str
         :return:
         """
@@ -34,7 +34,7 @@ class TextBlock(Element):
 
     def weight(self, weight):
         """weight of TextBlock elements
-        :param weight:
+        :param weight: Controls the weight of TextBlock elements.
         :type weight: str
         :return:
         """
@@ -43,7 +43,7 @@ class TextBlock(Element):
 
     def wrap(self, wrap):
         """allow text to wrap
-        :param wrap:
+        :param wrap: If true, allow text to wrap. Otherwise, text is clipped.
         :type wrap: bool
         :return:
         """
@@ -52,20 +52,20 @@ class TextBlock(Element):
 
     def separator(self, separator):
         """draw a separating line
-        :param separator:
+        :param separator: When true, draw a separating line at the top of the element.
         :type separator: bool
         :return:
         """
         self.element['separator'] = separator
         return self
 
-    def isSubtle(self, isSubtle):
+    def is_subtle(self, is_subtle):
         """text slightly toned down to appear less prominent
-        :param isSubtle:
-        :type isSubtle: bool
+        :param is_subtle: If true, displays text slightly toned down to appear less prominent.
+        :type is_subtle: bool
         :return:
         """
-        self.element['isSubtle'] = isSubtle
+        self.element['isSubtle'] = is_subtle
         return self
 
     def build(self):

@@ -8,7 +8,7 @@ class Image(Element):
 
     def __init__(self, url):
         """
-        :param url:
+        :param url: The URL to the image.
         :type url: str
         """
         Element.__init__(self, 'Image')
@@ -25,7 +25,8 @@ class Image(Element):
 
     def size(self, size):
         """approximate size of the image
-        :param size:
+        :param size: Controls the approximate size of the image.
+        The physical dimensions will vary per host. Specify "auto" for true image dimension, or "stretch" to force it to fill the container.
         :type size: str
         :return:
         """
