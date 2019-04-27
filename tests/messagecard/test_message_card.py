@@ -2,9 +2,9 @@ import os
 import pytest
 
 from json import load, loads
-from pyteams.messagecard.fact import Fact
-from pyteams.messagecard.section import Section
-from pyteams.messagecard.card import MessageCard
+from msteams.messagecard.fact import Fact
+from msteams.messagecard.section import Section
+from msteams.messagecard.card import MessageCard
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -22,13 +22,13 @@ def test_message_card(expected_payload):
                         activity_text='Helper library to construct microsoft teams connector card messages')\
         .build()
 
-    message_card = MessageCard().title('pyteams')\
+    message_card = MessageCard().title('ms-teams')\
         .summary('Helper library to construct microsoft teams connector card messages')\
         .theme_color('FF0000')\
         .section(activity_section)
 
     pkg_info = Section()\
-        .fact(Fact('URL', 'https://github.com/HarshadRanganathan/pyteams').build())\
+        .fact(Fact('URL', 'https://github.com/HarshadRanganathan/ms-teams').build())\
         .fact(Fact('AUTHOR', 'Harshad Ranganathan').build())\
         .build()
 

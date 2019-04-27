@@ -11,7 +11,7 @@
             "facts": [
                 {
                     "name": "URL",
-                    "value": "https://github.com/HarshadRanganathan/pyteams"
+                    "value": "https://github.com/HarshadRanganathan/ms-teams"
                 },
                 {
                     "name": "AUTHOR",
@@ -22,5 +22,5 @@
     ],
     "summary": "Helper library to construct microsoft teams connector card messages",
     "themeColor": "FF0000",
-    "title": "pyteams"
+    "title": "ms-teams"
 }

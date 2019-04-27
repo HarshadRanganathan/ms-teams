@@ -1,4 +1,4 @@
-from pyteams.adaptivecard.containers.layout import Layout
+from msteams.adaptivecard.containers.layout import Layout
 
 
 class ColumnSet(Layout):

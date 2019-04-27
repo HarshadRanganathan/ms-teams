@@ -1,19 +1,17 @@
-from pyteams.adaptivecard.containers.layout import Layout
+from msteams.adaptivecard.containers.layout import Layout
 
 
-class Column(Layout):
+class Container(Layout):
     """
     Containers group items together
     """
     Items = 'items'
 
-    def __init__(self, width=None):
-        Layout.__init__(self, 'Column')
-        if width is not None:
-            self.layout['width'] = width
+    def __init__(self):
+        Layout.__init__(self, 'Container')
 
     def element(self, element):
-        """card elements to render inside the Column.
+        """card elements to render inside the Container.
         :param element: card element
         :return:
         """

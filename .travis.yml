@@ -6,6 +6,6 @@ python:
 git:
   quiet: true
 install:
-  - pipenv install --dev
+  - pipenv install --dev --ignore-pipfile --deploy
 script:
   - pytest

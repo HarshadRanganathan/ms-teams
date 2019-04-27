@@ -1,4 +1,4 @@
-from pyteams.adaptivecard.elements.element import Element
+from msteams.adaptivecard.elements.element import Element
 
 
 class Image(Element):

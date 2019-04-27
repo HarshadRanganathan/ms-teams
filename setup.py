@@ -8,12 +8,12 @@ with open(os.path.join(HERE, "README.md")) as fid:
     README = fid.read()
 
 setup(
-    name="pyteams",
+    name="ms-teams",
     version=VERSION,
     description="Helper library to construct microsoft teams connector cards",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/HarshadRanganathan/pyteams",
+    url="https://github.com/HarshadRanganathan/ms-teams",
     author="Harshad Ranganathan",
     author_email="rharshad93@gmail.com",
     license="MIT",

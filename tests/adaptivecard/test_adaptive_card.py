@@ -2,14 +2,14 @@ import os
 import pytest
 
 from json import load, loads
-from pyteams.adaptivecard.elements.image import Image
-from pyteams.adaptivecard.elements.text_block import TextBlock
-from pyteams.adaptivecard.containers.column import Column
-from pyteams.adaptivecard.containers.column_set import ColumnSet
-from pyteams.adaptivecard.containers.container import Container
-from pyteams.adaptivecard.containers.fact_set import FactSet
-from pyteams.adaptivecard.containers.fact import Fact
-from pyteams.adaptivecard.card import AdaptiveCard
+from msteams.adaptivecard.elements.image import Image
+from msteams.adaptivecard.elements.text_block import TextBlock
+from msteams.adaptivecard.containers.column import Column
+from msteams.adaptivecard.containers.column_set import ColumnSet
+from msteams.adaptivecard.containers.container import Container
+from msteams.adaptivecard.containers.fact_set import FactSet
+from msteams.adaptivecard.containers.fact import Fact
+from msteams.adaptivecard.card import AdaptiveCard
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -21,7 +21,7 @@ def expected_payload():
 
 
 def test_adaptive_card(expected_payload):
-    title = TextBlock('pyteams').separator(True).size('Medium').weight('Bolder').build()
+    title = TextBlock('ms-teams').separator(True).size('Medium').weight('Bolder').build()
 
     activity_image = Image('https://www.shareicon.net/data/32x32/2016/07/16/634601_python_512x512.png').style('Person').size('small').build()
     activity_title = TextBlock('Description').weight('Bolder').wrap(True).build()
@@ -37,7 +37,7 @@ def test_adaptive_card(expected_payload):
     pkg_info = Container()
 
     basic = FactSet(separator=True)\
-        .fact(Fact('URL', 'https://github.com/HarshadRanganathan/pyteams').build()) \
+        .fact(Fact('URL', 'https://github.com/HarshadRanganathan/ms-teams').build()) \
         .fact(Fact('AUTHOR', 'Harshad Ranganathan').build()) \
         .fact(Fact('LICENSE', 'MIT').build()) \
         .build()

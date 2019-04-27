@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.com/HarshadRanganathan/pyteams.svg?branch=master)](https://travis-ci.com/HarshadRanganathan/pyteams)
+[![Build Status](https://travis-ci.com/HarshadRanganathan/ms-teams.svg?branch=master)](https://travis-ci.com/HarshadRanganathan/ms-teams)
 
-# pyteams
+# ms-teams
 
 Helper library to construct microsoft teams connector card messages.
 
@@ -12,15 +12,15 @@ This library supports building:
 
 ### Legacy Message Card
 
-Let's build below message card using pyteams library.
+Let's build below message card using ms-teams library.
 
 ![Message Card](images/Message_Card.png?raw=true)
 
 ```python
 # imports
-from pyteams.messagecard.fact import Fact
-from pyteams.messagecard.section import Section
-from pyteams.messagecard.card import MessageCard
+from msteams.messagecard.fact import Fact
+from msteams.messagecard.section import Section
+from msteams.messagecard.card import MessageCard
 
 # Create Activity Section
 activity_section = Section()\
@@ -29,15 +29,15 @@ activity_section = Section()\
 	                activity_text='Helper library to construct microsoft teams connector card messages')\
 	.build()
 
-# Add activitity section to the message card
-message_card = MessageCard().title('pyteams')\
+# Add activity section to the message card
+message_card = MessageCard().title('ms-teams')\
     .summary('Helper library to construct microsoft teams connector card messages')\
     .theme_color('FF0000')\
     .section(activity_section)
 
 # Create facts
 pkg_info = Section()\
-    .fact(Fact('URL', 'https://github.com/HarshadRanganathan/pyteams').build())\
+    .fact(Fact('URL', 'https://github.com/HarshadRanganathan/ms-teams').build())\
     .fact(Fact('AUTHOR', 'Harshad Ranganathan').build())\
     .build()
 
@@ -52,23 +52,23 @@ You can use [Card Playground](https://messagecardplayground.azurewebsites.net/) 
 
 Refer [Adaptive Card Schema](https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/card-schema) for authoring your cards. 
 
-Let's build below adaptive card using pyteams library.
+Let's build below adaptive card using ms-teams library.
 
 ![Adaptive Card](images/Adaptive_Card.png?raw=true)
 
 ```python
 # imports
-from pyteams.adaptivecard.elements.image import Image
-from pyteams.adaptivecard.elements.text_block import TextBlock
-from pyteams.adaptivecard.containers.column import Column
-from pyteams.adaptivecard.containers.column_set import ColumnSet
-from pyteams.adaptivecard.containers.container import Container
-from pyteams.adaptivecard.containers.fact_set import FactSet
-from pyteams.adaptivecard.containers.fact import Fact
-from pyteams.adaptivecard.card import AdaptiveCard
+from msteams.adaptivecard.elements.image import Image
+from msteams.adaptivecard.elements.text_block import TextBlock
+from msteams.adaptivecard.containers.column import Column
+from msteams.adaptivecard.containers.column_set import ColumnSet
+from msteams.adaptivecard.containers.container import Container
+from msteams.adaptivecard.containers.fact_set import FactSet
+from msteams.adaptivecard.containers.fact import Fact
+from msteams.adaptivecard.card import AdaptiveCard
 
 # Create Title using TextBlock (Displays text, allowing control over font sizes, weight, and color.)
-title = TextBlock('pyteams').separator(True).size('Medium').weight('Bolder').build()
+title = TextBlock('ms-teams').separator(True).size('Medium').weight('Bolder').build()
 
 # Create Activity Block (Image, Title, Subtitle)
 activity_image = Image('https://www.shareicon.net/data/32x32/2016/07/16/634601_python_512x512.png').style('Person').size('small').build()
@@ -90,7 +90,7 @@ adaptive_card = AdaptiveCard().container(header)
 pkg_info = Container()
 
 basic = FactSet(separator=True)\
-    .fact(Fact('URL', 'https://github.com/HarshadRanganathan/pyteams').build()) \
+    .fact(Fact('URL', 'https://github.com/HarshadRanganathan/ms-teams').build()) \
     .fact(Fact('AUTHOR', 'Harshad Ranganathan').build()) \
     .fact(Fact('LICENSE', 'MIT').build()) \
     .build()

@@ -6,7 +6,7 @@
         {
           "separator": true,
           "size": "Medium",
-          "text": "pyteams",
+          "text": "ms-teams",
           "type": "TextBlock",
           "weight": "Bolder"
         },
@@ -55,7 +55,7 @@
             {
               "title": "URL",
               "type": "Fact",
-              "value": "https://github.com/HarshadRanganathan/pyteams"
+              "value": "https://github.com/HarshadRanganathan/ms-teams"
             },
             {
               "title": "AUTHOR",
