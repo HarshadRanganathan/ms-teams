@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/HarshadRanganathan/ms-teams.svg?branch=master)](https://travis-ci.com/HarshadRanganathan/ms-teams)
+[![Downloads](https://pepy.tech/badge/ms-teams)](https://pepy.tech/project/ms-teams)
 
 # ms-teams
 
